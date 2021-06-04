@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/NasNav-Task/static/css/main.73d7ddfc.chunk.css",
+    "main.js": "/NasNav-Task/static/js/main.461faa50.chunk.js",
+    "main.js.map": "/NasNav-Task/static/js/main.461faa50.chunk.js.map",
+    "runtime-main.js": "/NasNav-Task/static/js/runtime-main.f153cf99.js",
+    "runtime-main.js.map": "/NasNav-Task/static/js/runtime-main.f153cf99.js.map",
+    "static/css/2.6b560088.chunk.css": "/NasNav-Task/static/css/2.6b560088.chunk.css",
+    "static/js/2.23c7d29a.chunk.js": "/NasNav-Task/static/js/2.23c7d29a.chunk.js",
+    "static/js/2.23c7d29a.chunk.js.map": "/NasNav-Task/static/js/2.23c7d29a.chunk.js.map",
+    "static/js/3.0aab122c.chunk.js": "/NasNav-Task/static/js/3.0aab122c.chunk.js",
+    "static/js/3.0aab122c.chunk.js.map": "/NasNav-Task/static/js/3.0aab122c.chunk.js.map",
+    "index.html": "/NasNav-Task/index.html",
+    "static/css/2.6b560088.chunk.css.map": "/NasNav-Task/static/css/2.6b560088.chunk.css.map",
+    "static/css/main.73d7ddfc.chunk.css.map": "/NasNav-Task/static/css/main.73d7ddfc.chunk.css.map",
+    "static/js/2.23c7d29a.chunk.js.LICENSE.txt": "/NasNav-Task/static/js/2.23c7d29a.chunk.js.LICENSE.txt",
+    "static/media/1.fa8400d9.jpeg": "/NasNav-Task/static/media/1.fa8400d9.jpeg",
+    "static/media/2.e4b878d3.jpeg": "/NasNav-Task/static/media/2.e4b878d3.jpeg",
+    "static/media/3.a579c282.jpeg": "/NasNav-Task/static/media/3.a579c282.jpeg",
+    "static/media/4.e8fc2cfa.jpeg": "/NasNav-Task/static/media/4.e8fc2cfa.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f153cf99.js",
+    "static/css/2.6b560088.chunk.css",
+    "static/js/2.23c7d29a.chunk.js",
+    "static/css/main.73d7ddfc.chunk.css",
+    "static/js/main.461faa50.chunk.js"
+  ]
+}

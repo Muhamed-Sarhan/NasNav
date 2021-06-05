@@ -1,5 +1,5 @@
 import React from 'react';
-import adidas from '../img/addidas.png';
+import adidas from '../img/adidas.svg';
 import SimpleRating from './Rating';
 
 export default function Product({ product, handleSelectedProduct }) {

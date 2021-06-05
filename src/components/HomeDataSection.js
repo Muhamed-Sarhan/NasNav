@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import SimpleRating from './Rating';
-import image from '../img/1.jpeg';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import { Divider } from '@material-ui/core';
+
+import adidas from '../img/adidas.svg';
 
 class HomeDataSection extends Component {
   state = {
@@ -71,6 +72,7 @@ class HomeDataSection extends Component {
 
     return (
       <div>
+        <img src={adidas} alt='adidas' className='homeBrandImg' />
         <h3>{title}</h3>
         <h4>{gender}</h4>
         <div className='ratingBoxHome'>
@@ -82,7 +84,6 @@ class HomeDataSection extends Component {
             <strong>{totalReview} Rates</strong>
           </h3>
         </div>
-
         <div className='ratingBoxHome'>
           <h2 className='currenrPriceHome'>{currentPrice} LE</h2>
           <h3 className='oldPriceHome'>{oldPrice} LE</h3>
@@ -93,20 +94,22 @@ class HomeDataSection extends Component {
         <Divider className='line' />
         <div>
           <h2>Size</h2>
-
-          <div className='circleSize'>
-            <p className='size'>
-              <strong>small</strong>
-            </p>
-          </div>
+          {size.map((oneSize) => (
+            <div className='circleSize'>
+              <p className='size'>
+                <strong>{oneSize}</strong>
+              </p>
+            </div>
+          ))}
         </div>
         <Divider className='line' />
         <div>
           <h2>Colors</h2>
-
-          <div className='imgShape'>
-            <img src={image} alt='color1' className='imgSize' />
-          </div>
+          {color.map((oneColor) => (
+            <div className='imgShape'>
+              <img src={oneColor} alt='color1' className='imgSize' />
+            </div>
+          ))}
         </div>
         <Divider className='line' />
         <div className='quantity'>
@@ -116,7 +119,7 @@ class HomeDataSection extends Component {
               className='plusIcon'
               onClick={() => this.handleIncreaseQuantity()}
             >
-              <AddIcon />
+              <AddIcon className='iconStyle' />
             </button>
             <div>
               <strong>{this.state.quantity}</strong>
@@ -125,7 +128,7 @@ class HomeDataSection extends Component {
               className='plusIcon'
               onClick={() => this.handleDecreaseQuantity()}
             >
-              <RemoveIcon />
+              <RemoveIcon className='iconStyle' />
             </button>
           </div>
           <div>

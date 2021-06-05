@@ -9,7 +9,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PersonIcon from '@material-ui/icons/Person';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import adidas from '../img/addidas.png';
+import adidas from '../img/adidas.svg';
 import Cart from './cart';
 
 const useStyles = makeStyles((theme) => ({

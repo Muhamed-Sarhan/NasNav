@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NasNav/static/css/main.a810390d.chunk.css",
+    "main.css": "/NasNav/static/css/main.7dedacae.chunk.css",
     "main.js": "/NasNav/static/js/main.0dc52ba7.chunk.js",
     "main.js.map": "/NasNav/static/js/main.0dc52ba7.chunk.js.map",
     "runtime-main.js": "/NasNav/static/js/runtime-main.c50861bc.js",
@@ -12,7 +12,7 @@
     "static/js/3.0aab122c.chunk.js.map": "/NasNav/static/js/3.0aab122c.chunk.js.map",
     "index.html": "/NasNav/index.html",
     "static/css/2.6b560088.chunk.css.map": "/NasNav/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.a810390d.chunk.css.map": "/NasNav/static/css/main.a810390d.chunk.css.map",
+    "static/css/main.7dedacae.chunk.css.map": "/NasNav/static/css/main.7dedacae.chunk.css.map",
     "static/js/2.2cbaa481.chunk.js.LICENSE.txt": "/NasNav/static/js/2.2cbaa481.chunk.js.LICENSE.txt",
     "static/media/adidas.92a712a5.svg": "/NasNav/static/media/adidas.92a712a5.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.c50861bc.js",
     "static/css/2.6b560088.chunk.css",
     "static/js/2.2cbaa481.chunk.js",
-    "static/css/main.a810390d.chunk.css",
+    "static/css/main.7dedacae.chunk.css",
     "static/js/main.0dc52ba7.chunk.js"
   ]
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Rating from '@material-ui/lab/Rating';
+import Rating from '@material-ui/lab/Rating'; //rating part
 import Box from '@material-ui/core/Box';
 
 export default function SimpleRating({ value, isReadOnly }) {

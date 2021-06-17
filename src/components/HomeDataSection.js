@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import SimpleRating from './Rating';
-import AddIcon from '@material-ui/icons/Add';
-import RemoveIcon from '@material-ui/icons/Remove';
-import { Divider } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add'; //icon
+import RemoveIcon from '@material-ui/icons/Remove'; //icon
+import { Divider } from '@material-ui/core'; //divider
 
 import adidas from '../img/adidas.svg';
 

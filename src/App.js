@@ -1,16 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import GeneralNav from './components/GeneralNav';
 import BrandsNav from './components/BrandsNav';
 import './styles/app.scss';
 import Categories from './components/Categories';
-import Breadcrumb from './components/Breadcrumbs';
 import { Divider } from '@material-ui/core';
 import data from './services/data';
 import ProductList from './components/ProductList';
-import Home from './components/Home';
 import Footer from './components/footer';
+import loadCircle from './img/loading.gif';
+
+const Home = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import('./components/Home')), 3000);
+  });
+});
 
 const { products } = data;
+
 class App extends Component {
   state = {
     selectedProductId: 1,
@@ -44,26 +50,28 @@ class App extends Component {
     const { selectedProductId, totalCartProducts } = this.state;
     console.log(this.state.products, 'vvxx');
     return (
-      <div className='App'>
-        <GeneralNav />
-        <BrandsNav totalCartProducts={totalCartProducts} />
-        <Categories />
-        <Breadcrumb />
-        <Divider />
-        <div className='container'>
-          <Home
-            products={products}
-            id={selectedProductId}
-            handleIncermentToCart={this.handleIncrementCartProducts}
-          />
-          <ProductList
-            allProducts={products}
-            id={selectedProductId}
-            handleSelectedProduct={this.handleSelectedProduct}
-          />
+      <Suspense fallback={<img src={loadCircle} className='loadingNasNav' />}>
+        <div className='App'>
+          <GeneralNav />
+          <BrandsNav totalCartProducts={totalCartProducts} />
+          <Categories />
+
+          <Divider />
+          <div className='container'>
+            <Home
+              products={products}
+              id={selectedProductId}
+              handleIncermentToCart={this.handleIncrementCartProducts}
+            />
+            <ProductList
+              allProducts={products}
+              id={selectedProductId}
+              handleSelectedProduct={this.handleSelectedProduct}
+            />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Suspense>
     );
   }
 }

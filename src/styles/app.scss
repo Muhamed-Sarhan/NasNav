@@ -208,6 +208,27 @@
   width: 50%;
   color: #fff;
 }
+ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  .NasNavli {
+    padding: 5%;
+    &:hover {
+      background-color: var(--primary-color);
+      border-radius: 25px;
+      transition: all 0.5s;
+    }
+  }
+}
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+.loadingNasNav {
+  margin-left: 45%;
+  margin-top: 15%;
+}
 
 @import './generalNav';
 @import './brandsNav';

@@ -1,32 +1,20 @@
-import React from 'react';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import React, { Component } from 'react';
 
-export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
+class Categories extends Component {
+  state = {};
 
-  return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className='categoryBar'
-    >
-      <BottomNavigationAction className='categoryBarItem' label='Men' />
-      <BottomNavigationAction className='categoryBarItem' label='Women' />
-      <BottomNavigationAction className='categoryBarItem' label='Unisex' />
-      <BottomNavigationAction className='categoryBarItem' label='Kids' />
-      <BottomNavigationAction
-        className='categoryBarItem'
-        label='Best Sellers'
-      />
-      <BottomNavigationAction className='categoryBarItem' label='New Arrival' />
-      <BottomNavigationAction
-        className='categoryBarItemOffers'
-        label='Offers'
-      />
-    </BottomNavigation>
-  );
+  render() {
+    return (
+      <div className='categoryBar'>
+        <h5>Men</h5>
+        <h5>Women</h5>
+        <h5>Unisex</h5>
+        <h5>Kids</h5>
+        <h5>Best Seller</h5>
+        <h5>New Arrival</h5>
+        <h5 className='categoryBarItemOffers'>Offers</h5>
+      </div>
+    );
+  }
 }
+export default Categories;
